@@ -39,6 +39,7 @@
     border-radius: 50%;
     transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s;
     box-shadow: 0 2px 12px rgba(86, 204, 242, 0.1);
+    border: 3px solid #56ccf2;
 }
 
 .profile-image:hover {
@@ -86,9 +87,11 @@
     line-height: 1.4;
 }
 .home-title-text {
+    font-family: "Dancing Script", "Segoe UI", Arial, sans-serif;
     font-size: 3rem;
     font-weight: 700;
     color: #2f80ed;
+    letter-spacing: 1.5px;
 }
 
 .designate-text {
@@ -122,7 +125,7 @@
 }
 
 .emphasise-text {
-    font-weight: 600;
+    font-weight: 500;
     transition: color 0.3s;
 }
 
@@ -174,4 +177,74 @@
 .social-links a:hover {
     color: #fff;
     transform: scale(1.12);
+}
+
+@media (max-width: 800px) {
+    #home {
+        height: 90vh;
+    }
+    .home-container {
+        width: 95%;
+    }
+    .home-top-container {
+        flex-direction: column;
+        align-items: stretch;
+        /* gap: 1.5rem; */
+    }
+    .left-side {
+        display: contents; /* This allows children to be direct flex items of .home-top-container */
+    }
+
+    .right-side {
+        order: 2;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 1.2rem;
+    }
+    .profile-image {
+        order: 1;
+        width: 9rem;
+        align-self: center;
+        margin-bottom: 1rem;
+    }
+    .home-title-text {
+        font-size: 2.7rem;
+        font-weight: 900;
+    }
+    .btn {
+        order: 3;
+        margin: 0 auto 0.5rem auto;
+        display: block;
+        max-width: 220px;
+        align-items: center;
+    }
+    .short-poem {
+        font-size: 1.1rem;
+        padding: 0.7rem;
+        margin-top: 0px;
+    }
+    .home-bottom-container {
+        flex-direction: column;
+        padding: 10px;
+    }
+    .social-links a {
+        width: 38px;
+        height: 38px;
+        font-size: 1.2rem;
+        margin-top: 0px;
+    }
+}
+@media (max-width: 600px) {
+    .profile-image {
+        width: 8rem;
+    }
+    .btn {
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+    }
+    .short-poem {
+        font-size: 1.1rem;
+        padding: 0.5rem 0.7rem;
+    }
 }

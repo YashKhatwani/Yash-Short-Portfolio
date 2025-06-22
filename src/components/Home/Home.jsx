@@ -10,7 +10,7 @@ import {
 
 const Home = () => {
     return (
-        <section id="home" data-aos="fade-up">
+        <section id="home">
             <div className="home-container">
                 <div className="home-top-container">
                     <div className="left-side">
@@ -19,8 +19,7 @@ const Home = () => {
                             alt="Profile"
                             className="profile-image"
                         />
-
-                        <button className="btn">Resume</button>
+                        <button className="btn resume-btn">Resume</button>
                     </div>
                     <div className="right-side">
                         <div className="home-content">
@@ -30,9 +29,8 @@ const Home = () => {
                                     Yash Khatwani
                                 </div>
                                 <div className="designate-text">
-                                    <i>a Software Engineer</i>
+                                    a Software Developer
                                 </div>
-                                .
                             </div>
                             <br />
                             <div className="short-poem">
@@ -45,13 +43,14 @@ const Home = () => {
                                     <span className="emphasise-text sky-blue">
                                         sky
                                     </span>
-                                    , I look at the{" "}
+                                    , as bright as a{" "}
                                     <span className="emphasise-text red-sun">
                                         sun
-                                    </span>{" "}
-                                    manifesting my goals and{" "}
+                                    </span>
+                                    ,
+                                    <br />
                                     <span className="emphasise-text">
-                                        creating my destiny that bright.
+                                        I create my destiny and have fun.
                                     </span>
                                 </i>
                                 "

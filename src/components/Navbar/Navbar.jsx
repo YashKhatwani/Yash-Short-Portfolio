@@ -1,11 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Navbar.css";
 
 const Navbar = () => {
+    const [menuOpen, setMenuOpen] = useState(false);
+
     const scrollToSection = (sectionId) => {
         const element = document.getElementById(sectionId);
         if (element) {
             element.scrollIntoView({ behavior: "smooth" });
+            setMenuOpen(false); // Close menu after click
         }
     };
 
@@ -13,7 +16,16 @@ const Navbar = () => {
         <section id="navbar">
             <nav className="navbar-container">
                 <div className="navbar-logo">YK</div>
-                <ul className="navbar-links">
+                <button
+                    className={`hamburger${menuOpen ? " open" : ""}`}
+                    onClick={() => setMenuOpen(!menuOpen)}
+                    aria-label="Toggle navigation"
+                >
+                    <span />
+                    <span />
+                    <span />
+                </button>
+                <ul className={`navbar-links${menuOpen ? " show" : ""}`}>
                     <li>
                         <button
                             className="nav-item"

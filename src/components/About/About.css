@@ -45,7 +45,7 @@
 
 .experience,
 .education {
-    flex: 1;
+    width: 90%;
     background: #f4faff;
     border-radius: 10px;
     padding: 1.2rem 1.5rem;
@@ -101,12 +101,51 @@
     margin-bottom: 1rem;
 }
 
-@media (max-width: 700px) {
-    .about-content {
+@media (max-width: 900px) {
+    .about-container {
         padding: 1rem;
+    }
+    .about-grid {
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 800px) {
+    #about {
+        height: 100vh;
+    }
+    .about-container {
+        width: 95%;
     }
     .about-grid {
         flex-direction: column;
         gap: 1rem;
+    }
+    .experience,
+    .education {
+        padding: 1rem;
+        font-size: 0.98rem;
+    }
+    .about-text {
+        padding: 1rem;
+        font-size: 1rem;
+    }
+    .about-container h2 {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .about-container {
+        padding: 0.2rem;
+    }
+    .about-text {
+        padding: 0.7rem;
+        font-size: 1rem;
+    }
+    .experience,
+    .education {
+        padding: 0.7rem;
+        font-size: 0.98rem;
     }
 }
