@@ -60,6 +60,7 @@
     transition: background 0.4s, transform 0.2s, box-shadow 0.2s;
     outline: none;
     letter-spacing: 1px;
+    text-decoration: none;
 }
 
 .btn:hover,

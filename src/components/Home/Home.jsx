@@ -19,7 +19,14 @@ const Home = () => {
                             alt="Profile"
                             className="profile-image"
                         />
-                        <button className="btn resume-btn">Resume</button>
+                        <a
+                            href="https://drive.google.com/file/d/17LpebcJsgSuZaoA386FLTzZL6oEgXjXf/view"
+                            className="btn resume-btn"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Resume
+                        </a>
                     </div>
                     <div className="right-side">
                         <div className="home-content">
