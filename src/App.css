@@ -12,5 +12,27 @@
 body {
     font-family: "Poppins", sans-serif;
     background-color: #ffffff;
-    padding-top: 6rem;
+}
+
+@media (max-width: 800px) {
+    #home {
+        min-height: auto;
+        height: auto;
+        padding-top: 1.2rem;
+        padding-bottom: 1.2rem;
+    }
+    #about {
+        margin-top: 1.5rem;
+        min-height: auto;
+        height: auto;
+        padding-top: 1.2rem;
+        padding-bottom: 1.2rem;
+        margin-bottom: 1.5rem;
+    }
+    #projects {
+        min-height: auto;
+        height: auto;
+        padding-top: 1.2rem;
+        padding-bottom: 1.2rem;
+    }
 }

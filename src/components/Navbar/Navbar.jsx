@@ -7,8 +7,9 @@ const Navbar = () => {
     const scrollToSection = (sectionId) => {
         const element = document.getElementById(sectionId);
         if (element) {
-            element.scrollIntoView({ behavior: "smooth" });
-            setMenuOpen(false); // Close menu after click
+            element.scrollIntoView({ behavior: "smooth", block: "start" });
+            setMenuOpen(false);
+            
         }
     };
 

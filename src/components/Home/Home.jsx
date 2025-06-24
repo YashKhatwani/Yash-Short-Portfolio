@@ -10,7 +10,7 @@ import {
 
 const Home = () => {
     return (
-        <section id="home">
+        <section id="home" data-aos="fade-up">
             <div className="home-container">
                 <div className="home-top-container">
                     <div className="left-side">
